@@ -45,8 +45,6 @@
    python main.py
    ```
 
-   或者在 Windows 上双击 `run_calculator.bat`
-
 ## 使用说明
 
 ### 基本操作
