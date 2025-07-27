@@ -1,0 +1,274 @@
+/* 
+多功能计算器 - 中国化主题样式
+作者：Claude 4.0 sonnet
+设计理念：温和、专业、符合中国用户习惯
+*/
+
+/* 主窗口样式 */
+QMainWindow {
+    background-color: #F8F9FA;
+    color: #2C3E50;
+    font-family: "Microsoft YaHei", "SimHei", "PingFang SC", sans-serif;
+    font-size: 13px;
+}
+
+/* 菜单栏样式 */
+QMenuBar {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E9ECEF;
+    padding: 6px;
+    font-size: 13px;
+    color: #495057;
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin: 0px 2px;
+}
+
+QMenuBar::item:selected {
+    background-color: #E3F2FD;
+    color: #1976D2;
+}
+
+QMenuBar::item:pressed {
+    background-color: #BBDEFB;
+}
+
+/* 菜单样式 */
+QMenu {
+    background-color: #FFFFFF;
+    border: 1px solid #DEE2E6;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 13px;
+    color: #495057;
+}
+
+QMenu::item {
+    padding: 10px 24px;
+    border-radius: 6px;
+    margin: 1px;
+}
+
+QMenu::item:selected {
+    background-color: #E3F2FD;
+    color: #1976D2;
+}
+
+QMenu::separator {
+    height: 1px;
+    background-color: #E9ECEF;
+    margin: 4px 8px;
+}
+
+/* 状态栏样式 */
+QStatusBar {
+    background-color: #FFFFFF;
+    border-top: 1px solid #E9ECEF;
+    padding: 6px 12px;
+    font-size: 12px;
+    color: #6C757D;
+}
+
+/* 标签页样式 */
+QTabWidget::pane {
+    border: 1px solid #DEE2E6;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    margin-top: -1px;
+}
+
+QTabWidget::tab-bar {
+    alignment: center;
+}
+
+QTabBar::tab {
+    background-color: #F8F9FA;
+    border: 1px solid #DEE2E6;
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 12px 24px;
+    margin-right: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #6C757D;
+    min-width: 80px;
+}
+
+QTabBar::tab:selected {
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    border-color: #357ABD;
+}
+
+QTabBar::tab:hover:!selected {
+    background-color: #E3F2FD;
+    color: #1976D2;
+    border-color: #BBDEFB;
+}
+
+/* 显示区域样式 */
+QLineEdit {
+    background-color: #FFFFFF;
+    border: 2px solid #E9ECEF;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 18px;
+    color: #2C3E50;
+    selection-background-color: #4A90E2;
+    font-family: "Consolas", "Microsoft YaHei", monospace;
+}
+
+QLineEdit:focus {
+    border-color: #4A90E2;
+    background-color: #FAFBFC;
+}
+
+QLabel {
+    background-color: #F8F9FA;
+    border: 2px solid #E9ECEF;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #2C3E50;
+    font-family: "Consolas", "Microsoft YaHei", monospace;
+}
+
+/* 按钮基础样式 */
+QPushButton {
+    border: 2px solid #ADB5BD;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px 6px;
+    margin: 3px;
+    font-family: "Microsoft YaHei", "SimHei", sans-serif;
+    min-height: 50px;
+    min-width: 70px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+QPushButton:hover {
+    border: 3px solid #4A90E2;
+    background-color: #F0F8FF;
+}
+
+QPushButton:pressed {
+    background-color: #E6F3FF;
+    border: 3px solid #357ABD;
+}
+
+QPushButton:disabled {
+    background-color: #F8F9FA;
+    color: #ADB5BD;
+    border-color: #E9ECEF;
+}
+
+/* 数字按钮样式 */
+QPushButton[buttonType="normal"] {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    border: 2px solid #CED4DA;
+}
+
+QPushButton[buttonType="normal"]:hover {
+    background-color: #F8F9FA;
+    border: 3px solid #4A90E2;
+}
+
+QPushButton[buttonType="normal"]:pressed {
+    background-color: #E9ECEF;
+    border: 3px solid #357ABD;
+}
+
+/* 运算符按钮样式 */
+QPushButton[buttonType="operator"] {
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    border: 2px solid #357ABD;
+}
+
+QPushButton[buttonType="operator"]:hover {
+    background-color: #357ABD;
+    border: 3px solid #2E86AB;
+}
+
+QPushButton[buttonType="operator"]:pressed {
+    background-color: #2E86AB;
+    border: 3px solid #1F5F8B;
+}
+
+/* 功能按钮样式 */
+QPushButton[buttonType="function"] {
+    background-color: #F8F9FA;
+    color: #495057;
+    border: 2px solid #CED4DA;
+}
+
+QPushButton[buttonType="function"]:hover {
+    background-color: #E9ECEF;
+    border: 3px solid #ADB5BD;
+}
+
+QPushButton[buttonType="function"]:pressed {
+    background-color: #DEE2E6;
+    border: 3px solid #868E96;
+}
+
+/* 特殊按钮样式（等号） */
+QPushButton[buttonType="special"] {
+    background-color: #FF6B35;
+    color: #FFFFFF;
+    border: 2px solid #E55A2B;
+    font-size: 18px;
+}
+
+QPushButton[buttonType="special"]:hover {
+    background-color: #E55A2B;
+    border: 3px solid #CC4E24;
+}
+
+QPushButton[buttonType="special"]:pressed {
+    background-color: #CC4E24;
+    border: 3px solid #B8421F;
+}
+
+/* 滚动条样式 */
+QScrollBar:vertical {
+    background-color: #F8F9FA;
+    width: 12px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #ADB5BD;
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #6C757D;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+}
+
+/* 工具提示样式 */
+QToolTip {
+    background-color: #2C3E50;
+    color: #FFFFFF;
+    border: 1px solid #495057;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-family: "Microsoft YaHei", sans-serif;
+}
